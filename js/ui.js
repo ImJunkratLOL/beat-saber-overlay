@@ -119,7 +119,7 @@ const ui = (() => {
 				data.difficulty = "Expert+";
 			}
 
-			cover.setAttribute("src", `data:image/png;base64,${data.songCover}`);
+			//cover.setAttribute("src", `data:image/png;base64,${data.songCover}`);
 
 			title.innerText = data.songName;
 			subtitle.innerText = data.songSubName;
