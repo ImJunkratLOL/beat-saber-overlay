@@ -97,6 +97,12 @@ body {
 
 /* Progress */
 
+div#cover {
+	width: 90px;
+	height: 90px;
+	border: 1px solid white;
+}
+
 #cover svg {
 	transform: rotate(-90deg);
 }

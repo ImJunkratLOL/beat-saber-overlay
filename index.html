@@ -6,11 +6,16 @@
 	</head>
 	
 	<body>
-		<div id="overlay" class="hidden">
+		<div id="overlay" class="">
 			<div id="performance">
 				<div class="performance-group">
 					<span class="text" id="rank">E</span>
 					<span class="subtext" id="percentage">0%</span>
+				</div>
+
+				<div class="performance-group">
+					<span class="text" id="hitRatePercentage">100%</span>
+					<span class="subtext" id="hitRate">Hit Rate</span>
 				</div>
 
 				<div class="performance-group">
@@ -23,7 +28,7 @@
 
 			<div id="beatmap">
 				<div id="cover">
-					<img id="image">
+					<img id="image" style="display: none;">
 					
 					<svg width="90" height="90">
 						<rect width="90" height="90" id="darken"></rect>

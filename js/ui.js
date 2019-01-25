@@ -6,6 +6,7 @@ const ui = (() => {
 		var percentage = document.getElementById("percentage");
 		var score = document.getElementById("score");
 		var combo = document.getElementById("combo");
+		var hitrate = document.getElementById('hitRatePercentage');
 
 		function format(number) {
 			return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -16,6 +17,7 @@ const ui = (() => {
 			combo.innerText = data.combo;
 			rank.innerText = data.rank;
 			percentage.innerText = (data.currentMaxScore > 0 ? (Math.floor((data.score / data.currentMaxScore) * 1000) / 10) : 0) + "%";
+    		hitrate.innerText = (data.passedNotes > 0 ? (Math.floor((data.hitNotes / data.passedNotes) * 1000) / 10) : 0) + "%";
 		}
 	})();
 
